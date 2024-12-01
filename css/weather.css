@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'montserrat', sans-serif;
+    background-image: url('../assets/img/mohamed-alaau-bRWqvzpmlfo-unsplash.jpg');
+    background-size: cover;
+    background-position: top center;
+}
+
+.app-wrap{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.6));
+}
+
+header{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px 15px;
+}
+
+header input{
+    width: 100%;
+    max-width: 280px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 16px 0px 16px 0px;
+    border-bottom: 3x solid #DF8E00;
+    color: #313131;
+    font-size: 20px;
+    font-weight: 300;
+    transition: 0.2s ease-out;
+}
+
+header input:focus{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+main{
+    flex: 1 1 100%;
+    padding: 25px 25px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.location .city{
+    color: white;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.location .date{
+    color: white;
+    font-size: 16px;
+}
+
+.current .temp{
+    color: white;
+    font-size: 102px;
+    font-weight: 900;
+    margin: 30px 0px;
+    text-shadow: 2px 10px rgba(0,0,0,0.6);
+}
+
+.current .temp span{
+    font-weight:500;
+}
+
+.current .weather{
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 15px;
+    text-shadow: 0px 3px rgba(0,0,0,0.4);
+}
+
+.current .hi-low{
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    text-shadow: 0px 4px rgba(0,0,0,0.4);
+}
+
+.go-back {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+        -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
+    background-color: #f8f9fa;
+    border: 1px solid transparent;
+    border-color: #f8f9fa;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .go-back {
+        transition: none;
+    }
+}
+
+.go-back:hover {
+    color: #212529;
+    background-color: #e2e6ea;
+    border-color: #dae0e5;
+    text-decoration: none;
+}
+
+.go-back:focus,
+.go-back.focus {
+    outline: 0;
+    color: #212529;
+    background-color: #e2e6ea;
+    border-color: #dae0e5;
+    box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
+}

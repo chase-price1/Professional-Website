@@ -1,0 +1,61 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+$custom-colors: (
+    "mess-orange": #eea141
+);
+
+$theme-colors: map-merge($theme-colors , $custom-colors );
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+body {
+    background-image: url("../img/background.png");
+    background-size: 150%;
+    background-repeat: repeat;
+
+    isolation: isolate;
+}
+
+.welcome {
+    font-family: "Space Mono";
+    color: white;
+    text-align: center;
+    padding-top: 70px;
+    overflow: visible;
+}
+
+.welcome h1 {
+    font-weight: 700;
+    font-size: 50px;
+    padding: 5px;
+}
+
+.welcome h1 span {
+    background-color: black;
+}
+
+.welcome h2 {
+    font-size: 30px;
+    padding: 5px;
+    line-height: 135%;
+}
+
+.welcome h2 span {
+    background-color: black;
+}
+
+.welcome p {
+    font-style: italic;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.welcome p span {
+    background-color: black;
+}
+
+.btn-outline-mess-orange {
+    font-family: "Space Mono" !important;
+    background-color: black;
+}

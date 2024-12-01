@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href="css/weather.css" rel="stylesheet" />
+</head>
+<body onload="getResults('Logan, us')">
+    <div class="app-wrap">
+        <header>
+            <input type="text" autocomplete="off" class="search-box" placeholder="Search for a city..." />
+        </header>
+        <main>
+            <section class="location">
+                <div class="city">Logan, US</div>
+                <div class="date">ㅤ</div>
+            </section>
+            <div class="current">
+                <div class="temp">ㅤ<span>&deg; F</span></div>
+                <div class="weather">ㅤ</div>
+                <div class="hi-low">ㅤ&deg; F / ㅤ&deg; F</div>
+            </div>
+            <br><br><br>
+            <a href="/portfolio.html"><button class="go-back">Go Back to Portfolio</button></a>
+        </main>
+    </div>
+    <script src="js/weather.js"></script>
+</body>
+</html>
